@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,11 +46,13 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center font-display font-bold text-lg text-white">
-                SHS
-              </div>
+              <img 
+                src={logo} 
+                alt="SHS Services Logo" 
+                className="h-12 w-auto brightness-0 invert"
+              />
               <span className="font-display text-xl font-bold text-primary-foreground">
-                SHS Services
+                Services LLC
               </span>
             </div>
             <p className="font-body text-primary-foreground/60 leading-relaxed mb-6">
