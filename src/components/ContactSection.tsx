@@ -7,7 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
   { icon: Phone, label: "Call Us", value: "(213) 268-9542", href: "tel:+12132689542" },
-  { icon: Mail, label: "Email Us", value: "info@shsservicesllc.com", href: "mailto:info@shsservicesllc.com" },
+  { icon: Mail, label: "Email Us", value: "info@shsofficial.com", href: "mailto:info@shsofficial.com" },
   { icon: MapPin, label: "Visit Us", value: "14970 Potomac Heights Pl, Unit 113, Woodbridge, VA 22191", href: "#" },
   { icon: Clock, label: "Business Hours", value: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM", href: "#" },
 ];
