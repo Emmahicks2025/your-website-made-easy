@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
-import logo from "@/assets/logo-hvac.png";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,13 +32,10 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <div className="flex items-center gap-3">
-            <img 
-              src={logo} 
-              alt="SHS Services Logo" 
-              className="h-14 md:h-16 w-auto transition-all"
-            />
-          </div>
+          <Logo 
+            size={isScrolled ? "sm" : "md"} 
+            variant={isScrolled ? "dark" : "light"}
+          />
         </a>
 
         {/* Desktop Navigation */}

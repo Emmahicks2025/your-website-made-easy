@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
-import logo from "@/assets/logo-hvac.png";
+import Logo from "./Logo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className="bg-primary pt-20 pb-8">
       {/* CTA Banner */}
       <div className="container mx-auto px-4 mb-16">
-        <div className="bg-gradient-to-r from-accent to-amber-400 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-gradient-to-r from-accent to-sky-400 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-2xl md:text-3xl font-bold text-primary mb-2">
               Need HVAC Service?
@@ -45,13 +45,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <img 
-                src={logo} 
-                alt="SHS Services Logo" 
-                className="h-20 w-auto"
-              />
-            </div>
+            <Logo size="lg" variant="light" className="mb-6" />
             <p className="font-body text-primary-foreground/60 leading-relaxed mb-6 max-w-xs">
               Your trusted HVAC experts. Keeping Virginia comfortable 
               with premium heating, cooling & ventilation solutions for over 20 years.
