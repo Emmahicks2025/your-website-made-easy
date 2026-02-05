@@ -27,7 +27,7 @@
                  Introduction
                </h2>
                <p className="text-foreground/80 leading-relaxed">
-                 SHS Services LLC ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our HVAC services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site or use our services.
+                 SHS Services Inc. ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our HVAC services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site or use our services.
                </p>
                <p className="text-foreground/80 leading-relaxed mt-4">
                  We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Last updated" date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.
@@ -180,7 +180,7 @@
                  If you have questions or concerns about this Privacy Policy or our data practices, please contact us:
                </p>
                <div className="mt-4 p-4 bg-muted rounded-xl">
-                 <p className="text-foreground font-semibold">SHS Services LLC</p>
+                 <p className="text-foreground font-semibold">SHS Services Inc.</p>
                  <p className="text-foreground/80">14970 Potomac Heights Pl, Unit 113</p>
                  <p className="text-foreground/80">Woodbridge, VA 22191</p>
                  <p className="text-foreground/80 mt-2">Email: info@shsofficial.com</p>

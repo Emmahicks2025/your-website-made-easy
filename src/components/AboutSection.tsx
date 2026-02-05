@@ -27,7 +27,7 @@ const AboutSection = () => {
               <span className="text-primary">HVAC Experts</span>
             </h2>
             <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8">
-              For over 20 years, SHS Services LLC has been keeping Virginia homes and 
+               For over 20 years, SHS Services Inc. has been keeping Virginia homes and 
               businesses comfortable. Our NATE-certified technicians specialize in all 
               major HVAC brands, delivering reliable heating and cooling solutions you can count on.
             </p>

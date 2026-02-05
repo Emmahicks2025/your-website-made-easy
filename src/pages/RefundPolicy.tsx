@@ -26,7 +26,7 @@
                  Our Commitment to Satisfaction
                </h2>
                <p className="text-foreground/80 leading-relaxed">
-                 At SHS Services LLC, we are committed to providing exceptional HVAC services that meet or exceed your expectations. We stand behind the quality of our work and want every customer to be completely satisfied. This Refund Policy outlines the circumstances under which refunds may be issued and the process for requesting one.
+                 At SHS Services Inc., we are committed to providing exceptional HVAC services that meet or exceed your expectations. We stand behind the quality of our work and want every customer to be completely satisfied. This Refund Policy outlines the circumstances under which refunds may be issued and the process for requesting one.
                </p>
                <p className="text-foreground/80 leading-relaxed mt-4">
                  We encourage you to contact us immediately if you have any concerns about the services provided. Many issues can be resolved quickly through direct communication with our team.
@@ -209,7 +209,7 @@
                  For refund requests or questions about this policy, please contact us:
                </p>
                <div className="mt-4 p-4 bg-muted rounded-xl">
-                 <p className="text-foreground font-semibold">SHS Services LLC</p>
+                 <p className="text-foreground font-semibold">SHS Services Inc.</p>
                  <p className="text-foreground/80">14970 Potomac Heights Pl, Unit 113</p>
                  <p className="text-foreground/80">Woodbridge, VA 22191</p>
                  <p className="text-foreground/80 mt-2">Email: info@shsofficial.com</p>
