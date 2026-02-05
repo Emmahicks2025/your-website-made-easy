@@ -1,37 +1,38 @@
 import { Wrench, Shield, Clock, Award, ArrowRight } from "lucide-react";
-import serviceRepairs from "@/assets/service-repairs.jpg";
-import serviceMaintenance from "@/assets/service-maintenance.jpg";
+import { Snowflake, Flame, Wind, Wrench as WrenchIcon } from "lucide-react";
+import serviceAC from "@/assets/service-ac.jpg";
+import serviceHeating from "@/assets/service-heating.jpg";
+import serviceVentilation from "@/assets/service-ventilation.jpg";
 import serviceEmergency from "@/assets/service-emergency.jpg";
-import serviceQuality from "@/assets/service-quality.jpg";
 
 const services = [
   {
-    icon: Wrench,
-    title: "Expert Repairs",
+    icon: Snowflake,
+    title: "Air Conditioning",
     description:
-      "From minor fixes to major overhauls, our skilled technicians handle it all with precision and care.",
-    image: serviceRepairs,
+      "Expert AC installation, repair, and maintenance. Stay cool all summer with energy-efficient cooling solutions.",
+    image: serviceAC,
   },
   {
-    icon: Shield,
-    title: "Preventive Maintenance",
+    icon: Flame,
+    title: "Heating Systems",
     description:
-      "Keep your systems running smoothly with our comprehensive maintenance programs.",
-    image: serviceMaintenance,
+      "Furnace installation, heat pump services, and heating repairs. Keep your home warm and cozy all winter.",
+    image: serviceHeating,
   },
   {
-    icon: Clock,
-    title: "Emergency Services",
+    icon: Wind,
+    title: "Ventilation & Air Quality",
     description:
-      "Available 24/7 for urgent situations. We're just a call away when you need us most.",
+      "Improve indoor air quality with duct cleaning, ventilation systems, and air purification solutions.",
+    image: serviceVentilation,
+  },
+  {
+    icon: WrenchIcon,
+    title: "24/7 Emergency Repair",
+    description:
+      "HVAC emergency? We're available around the clock. Fast response times and reliable repairs when you need them most.",
     image: serviceEmergency,
-  },
-  {
-    icon: Award,
-    title: "Quality Guarantee",
-    description:
-      "All our work is backed by a satisfaction guarantee. Your peace of mind is our priority.",
-    image: serviceQuality,
   },
 ];
 
@@ -46,14 +47,14 @@ const ServicesSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-full font-body text-sm font-semibold mb-6 border border-primary/10">
             <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-            What We Offer
+            Our HVAC Services
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Our Professional Services
+            Complete Heating & Cooling Solutions
           </h2>
           <p className="font-body text-muted-foreground text-lg md:text-xl leading-relaxed">
-            We provide a comprehensive range of premium services designed to exceed 
-            expectations and deliver lasting results.
+            From AC installation to furnace repair, we provide comprehensive HVAC services 
+            to keep your home comfortable in every season.
           </p>
         </div>
 

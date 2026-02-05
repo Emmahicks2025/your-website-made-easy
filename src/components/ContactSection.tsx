@@ -41,14 +41,14 @@ const ContactSection = () => {
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-full font-body text-sm font-semibold mb-6 border border-primary/10">
               <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-              Get In Touch
+            Contact Us
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-              Ready to Start Your <span className="text-primary">Project?</span>
+            Need HVAC <span className="text-primary">Service?</span>
             </h2>
             <p className="font-body text-muted-foreground text-lg leading-relaxed mb-10">
-              Get in touch with our team for a free consultation and detailed quote. 
-              We respond to all inquiries within 24 hours.
+            Schedule a free in-home estimate or request emergency HVAC repair. 
+            Our team is available 24/7 to keep you comfortable.
             </p>
 
             <div className="space-y-5">
@@ -76,10 +76,10 @@ const ContactSection = () => {
 
           <div className="bg-white rounded-3xl p-8 md:p-10 shadow-2xl border border-border/50">
             <h3 className="font-display text-2xl font-bold text-foreground mb-2">
-              Send Us a Message
+              Request Service
             </h3>
             <p className="font-body text-muted-foreground mb-8">
-              Fill out the form below and we'll get back to you promptly.
+              Fill out the form and we'll contact you within 1 hour.
             </p>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
@@ -115,7 +115,7 @@ const ContactSection = () => {
                 />
               </div>
               <Textarea
-                placeholder="Tell us about your project..."
+                placeholder="Describe your HVAC issue or service needed..."
                 value={formData.message}
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })

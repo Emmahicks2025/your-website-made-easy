@@ -1,12 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, Thermometer, Wind, Snowflake } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   const highlights = [
-    "Licensed & Insured",
-    "24/7 Emergency Service",
-    "Free Estimates",
+    "EPA Certified Technicians",
+    "24/7 Emergency HVAC Service",
+    "Free In-Home Estimates",
   ];
 
   return (
@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className="animate-fade-up" style={{ animationDelay: "0.1s" }}>
             <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-sm text-white/90 rounded-full font-body text-sm font-medium mb-8 border border-white/10">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-              Enterprise-Grade Professional Services
+              Virginia's Premier HVAC Specialists
             </span>
           </div>
 
@@ -37,16 +37,16 @@ const HeroSection = () => {
             className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-[1.1] mb-8 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Delivering Excellence{" "}
-            <span className="text-gradient">You Can Trust</span>
+            Heating & Cooling{" "}
+            <span className="text-gradient">Done Right</span>
           </h1>
 
           <p
             className="font-body text-lg md:text-xl text-primary-foreground/70 mb-10 leading-relaxed max-w-2xl animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
-            SHS Services LLC has been the trusted partner for businesses and homeowners 
-            for over two decades. We deliver premium quality with unmatched reliability.
+            SHS Services LLC delivers expert HVAC installation, repair, and maintenance 
+            throughout Virginia. Keep your home comfortable year-round with our certified technicians.
           </p>
 
           <div
@@ -69,11 +69,11 @@ const HeroSection = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <Button variant="hero" size="xl" className="group">
-              Get Free Quote
+              Schedule Service
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button variant="heroOutline" size="xl">
-              Explore Services
+              Call (213) 268-9542
             </Button>
           </div>
 
@@ -84,18 +84,21 @@ const HeroSection = () => {
           >
             <div className="flex flex-wrap items-center gap-8 md:gap-12">
               <div className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-accent">20+</div>
-                <div className="font-body text-sm text-primary-foreground/60 mt-1">Years Experience</div>
+                <Thermometer className="w-6 h-6 text-accent mx-auto mb-2" />
+                <div className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">20+</div>
+                <div className="font-body text-sm text-primary-foreground/60 mt-1">Years HVAC Experience</div>
               </div>
               <div className="h-12 w-px bg-white/10 hidden md:block"></div>
               <div className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-accent">5,000+</div>
-                <div className="font-body text-sm text-primary-foreground/60 mt-1">Projects Completed</div>
+                <Wind className="w-6 h-6 text-accent mx-auto mb-2" />
+                <div className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">5,000+</div>
+                <div className="font-body text-sm text-primary-foreground/60 mt-1">Systems Installed</div>
               </div>
               <div className="h-12 w-px bg-white/10 hidden md:block"></div>
               <div className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-accent">99%</div>
-                <div className="font-body text-sm text-primary-foreground/60 mt-1">Client Satisfaction</div>
+                <Snowflake className="w-6 h-6 text-accent mx-auto mb-2" />
+                <div className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">99%</div>
+                <div className="font-body text-sm text-primary-foreground/60 mt-1">Customer Satisfaction</div>
               </div>
             </div>
           </div>
