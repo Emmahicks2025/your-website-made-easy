@@ -36,7 +36,7 @@ const Header = () => {
               isScrolled ? "text-primary" : "text-primary-foreground"
             }`}
           >
-            ProService
+            SHS Services LLC
           </span>
         </a>
 
