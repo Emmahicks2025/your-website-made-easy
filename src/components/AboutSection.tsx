@@ -1,12 +1,13 @@
 import { Users, Calendar, ThumbsUp, Award, CheckCircle } from "lucide-react";
+import { Thermometer, ShieldCheck, Clock, Leaf } from "lucide-react";
 import teamImage from "@/assets/team.jpg";
 
 const AboutSection = () => {
   const values = [
-    "Certified & Licensed Professionals",
-    "Transparent Pricing, No Hidden Fees",
+    "EPA & NATE Certified Technicians",
+    "Upfront Pricing, No Surprises",
     "100% Satisfaction Guarantee",
-    "Rapid Response Times",
+    "Same-Day Service Available",
   ];
 
   return (
@@ -19,17 +20,16 @@ const AboutSection = () => {
           <div>
             <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-full font-body text-sm font-semibold mb-6 border border-primary/10">
               <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-              About Us
+              Why Choose SHS
             </span>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
-              Building Trust Through{" "}
-              <span className="text-primary">Excellence</span>
+              Virginia's Most Trusted{" "}
+              <span className="text-primary">HVAC Experts</span>
             </h2>
             <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8">
-              For over two decades, SHS Services LLC has been the premier choice for 
-              businesses and homeowners throughout Virginia. Our unwavering commitment 
-              to quality workmanship and exceptional customer service has established 
-              us as industry leaders.
+              For over 20 years, SHS Services LLC has been keeping Virginia homes and 
+              businesses comfortable. Our NATE-certified technicians specialize in all 
+              major HVAC brands, delivering reliable heating and cooling solutions you can count on.
             </p>
             
             {/* Values list */}
@@ -49,8 +49,8 @@ const AboutSection = () => {
               href="#contact" 
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all hover:shadow-xl hover:shadow-primary/20"
             >
-              <span>Get Started Today</span>
-              <Award className="w-5 h-5" />
+              <span>Schedule Free Estimate</span>
+              <Thermometer className="w-5 h-5" />
             </a>
           </div>
 

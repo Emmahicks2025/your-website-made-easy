@@ -3,26 +3,26 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah Johnson",
-    role: "Homeowner",
+    role: "Homeowner, Woodbridge",
     initials: "SJ",
     content:
-      "Exceptional service from start to finish. The team was professional, punctual, and the quality of work exceeded my expectations. Highly recommend!",
+      "SHS installed our new AC system and it's been running perfectly! The team was professional, on-time, and cleaned up everything. Highly recommend for any HVAC needs!",
     rating: 5,
   },
   {
     name: "Michael Chen",
-    role: "Business Owner",
+    role: "Restaurant Owner, Manassas",
     initials: "MC",
     content:
-      "We've been using their services for our office building for years. Reliable, trustworthy, and always delivers quality work. They're our go-to choice.",
+      "They handle all the HVAC for our restaurant. When our AC went out during a heat wave, they had someone there within 2 hours. That's the kind of service you can't find anywhere else.",
     rating: 5,
   },
   {
     name: "Emily Rodriguez",
-    role: "Property Manager",
+    role: "Property Manager, Fairfax",
     initials: "ER",
     content:
-      "Managing multiple properties means I need reliable contractors. They've never let me down – responsive, fair pricing, and excellent craftsmanship.",
+      "I manage 50+ rental units and SHS is my go-to for all heating and cooling. Fair prices, quick response, and they always get it right the first time.",
     rating: 5,
   },
 ];
@@ -46,14 +46,14 @@ const TestimonialsSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-20 relative z-10">
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white/90 rounded-full font-body text-sm font-semibold mb-6 border border-white/10">
             <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
-            Testimonials
+            Customer Reviews
           </span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-6">
-            What Our Customers Say
+            Trusted by Thousands of Virginia Families
           </h2>
           <p className="font-body text-primary-foreground/70 text-lg md:text-xl">
-            Join thousands of satisfied customers who trust SHS Services LLC 
-            for their most important projects.
+            See why homeowners and businesses across Virginia choose SHS 
+            for their heating and cooling needs.
           </p>
         </div>
 

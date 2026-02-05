@@ -1,15 +1,15 @@
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-hvac.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const links = {
     services: [
-      { label: "Repairs", href: "#services" },
-      { label: "Maintenance", href: "#services" },
-      { label: "Emergency", href: "#services" },
-      { label: "Consulting", href: "#services" },
+      { label: "AC Installation", href: "#services" },
+      { label: "Heating Systems", href: "#services" },
+      { label: "Ventilation", href: "#services" },
+      { label: "Emergency HVAC", href: "#services" },
     ],
     company: [
       { label: "About Us", href: "#about" },
@@ -25,10 +25,10 @@ const Footer = () => {
         <div className="bg-gradient-to-r from-accent to-amber-400 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h3 className="font-display text-2xl md:text-3xl font-bold text-primary mb-2">
-              Ready to Get Started?
+              Need HVAC Service?
             </h3>
             <p className="font-body text-primary/80">
-              Contact us today for a free consultation and quote.
+              Get a free estimate for your heating & cooling needs today.
             </p>
           </div>
           <a 
@@ -49,15 +49,12 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="SHS Services Logo" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-14 w-auto"
               />
-              <span className="font-display text-xl font-bold text-primary-foreground">
-                Services LLC
-              </span>
             </div>
-            <p className="font-body text-primary-foreground/60 leading-relaxed mb-6">
-              Your trusted partner for premium professional services. 
-              Serving Virginia with excellence for over 20 years.
+            <p className="font-body text-primary-foreground/60 leading-relaxed mb-6 max-w-xs">
+              Your trusted HVAC experts. Keeping Virginia comfortable 
+              with premium heating, cooling & ventilation solutions for over 20 years.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-primary-foreground/70 hover:bg-accent hover:text-primary transition-all">

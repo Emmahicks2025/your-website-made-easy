@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-hvac.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,17 +36,8 @@ const Header = () => {
             <img 
               src={logo} 
               alt="SHS Services Logo" 
-              className={`h-10 w-auto transition-all ${
-                isScrolled ? "" : "brightness-0 invert"
-              }`}
+              className="h-12 w-auto transition-all"
             />
-            <span
-              className={`font-display text-xl font-bold transition-colors hidden sm:block ${
-                isScrolled ? "text-primary" : "text-primary-foreground"
-              }`}
-            >
-              Services LLC
-            </span>
           </div>
         </a>
 
