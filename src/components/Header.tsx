@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, ArrowRight } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,19 +25,26 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-card/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-transparent py-5"
+          ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-primary/5 py-3"
+          : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <span
-            className={`font-display text-2xl font-bold transition-colors ${
-              isScrolled ? "text-primary" : "text-primary-foreground"
-            }`}
-          >
-            SHS Services LLC
-          </span>
+          <div className="flex items-center gap-3">
+            <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-display font-bold text-lg transition-colors ${
+              isScrolled ? "bg-primary text-primary-foreground" : "bg-white/20 text-white backdrop-blur-sm"
+            }`}>
+              SHS
+            </div>
+            <span
+              className={`font-display text-xl font-bold transition-colors hidden sm:block ${
+                isScrolled ? "text-primary" : "text-primary-foreground"
+              }`}
+            >
+              SHS Services
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
@@ -46,17 +53,20 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className={`font-body font-medium transition-colors hover:text-accent ${
-                isScrolled ? "text-foreground" : "text-primary-foreground/90"
+              className={`font-body font-medium transition-all hover:text-accent relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent hover:after:w-full after:transition-all ${
+                isScrolled ? "text-foreground/80" : "text-primary-foreground/90"
               }`}
             >
               {link.label}
             </a>
           ))}
-          <Button variant={isScrolled ? "default" : "hero"} size="lg">
-            <Phone className="w-4 h-4" />
-            Call Now
-          </Button>
+          <a href="tel:+12132689542">
+            <Button variant={isScrolled ? "default" : "hero"} size="lg" className="group">
+              <Phone className="w-4 h-4" />
+              (213) 268-9542
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -72,22 +82,24 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-card shadow-xl animate-fade-in">
-          <nav className="container mx-auto px-4 py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-white shadow-2xl animate-fade-in border-t">
+          <nav className="container mx-auto px-4 py-8 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="font-body font-medium text-foreground py-2 hover:text-accent transition-colors"
+                className="font-body font-medium text-foreground py-3 px-4 hover:text-accent hover:bg-primary/5 rounded-xl transition-all"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <Button variant="default" size="lg" className="mt-2">
-              <Phone className="w-4 h-4" />
-              Call Now
-            </Button>
+            <a href="tel:+12132689542" className="mt-2">
+              <Button variant="default" size="lg" className="w-full">
+                <Phone className="w-4 h-4" />
+                (213) 268-9542
+              </Button>
+            </a>
           </nav>
         </div>
       )}
