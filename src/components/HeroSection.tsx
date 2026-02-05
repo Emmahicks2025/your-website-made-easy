@@ -27,7 +27,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10 pt-24">
         <div className="max-w-4xl">
           <div className="animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-sm text-white/90 rounded-full font-body text-sm font-medium mb-8 border border-white/10">
+            <span className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 backdrop-blur-sm text-white/90 rounded-full font-body text-sm font-medium mt-4 md:mt-8 mb-8 border border-white/10">
               <span className="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
               Virginia's Premier HVAC Specialists
             </span>
