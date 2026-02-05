@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Thermometer, Wind, Snowflake } from "lucide-react";
+import { ArrowRight, CheckCircle, Thermometer, Wind, Snowflake as SnowflakeIcon } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -84,19 +84,19 @@ const HeroSection = () => {
           >
             <div className="flex flex-wrap items-center gap-8 md:gap-12">
               <div className="text-center">
-                <Thermometer className="w-6 h-6 text-accent mx-auto mb-2" />
+                <Thermometer className="w-6 h-6 text-sky-400 mx-auto mb-2" />
                 <div className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">20+</div>
                 <div className="font-body text-sm text-primary-foreground/60 mt-1">Years HVAC Experience</div>
               </div>
               <div className="h-12 w-px bg-white/10 hidden md:block"></div>
               <div className="text-center">
-                <Wind className="w-6 h-6 text-accent mx-auto mb-2" />
+                <Wind className="w-6 h-6 text-sky-400 mx-auto mb-2" />
                 <div className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">5,000+</div>
                 <div className="font-body text-sm text-primary-foreground/60 mt-1">Systems Installed</div>
               </div>
               <div className="h-12 w-px bg-white/10 hidden md:block"></div>
               <div className="text-center">
-                <Snowflake className="w-6 h-6 text-accent mx-auto mb-2" />
+                <SnowflakeIcon className="w-6 h-6 text-sky-400 mx-auto mb-2" />
                 <div className="font-display text-2xl md:text-3xl font-bold text-primary-foreground">99%</div>
                 <div className="font-body text-sm text-primary-foreground/60 mt-1">Customer Satisfaction</div>
               </div>
