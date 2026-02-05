@@ -6,9 +6,9 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "(555) 123-4567" },
-  { icon: Mail, label: "Email", value: "info@proservice.com" },
-  { icon: MapPin, label: "Address", value: "123 Main Street, City, State 12345" },
+  { icon: Phone, label: "Phone", value: "(213) 268-9542" },
+  { icon: Mail, label: "Email", value: "info@shsservicesllc.com" },
+  { icon: MapPin, label: "Address", value: "14970 Potomac Heights Pl, Unit 113, Woodbridge, VA 22191" },
   { icon: Clock, label: "Hours", value: "Mon-Fri: 8AM-6PM, Sat: 9AM-4PM" },
 ];
 
