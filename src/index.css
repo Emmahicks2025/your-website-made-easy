@@ -1,58 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Corporate Design System
-   Deep navy, slate gray, warm gold accents
+/* Premium Enterprise Design System
+   Deep charcoal, sophisticated slate, refined gold accents
    All colors in HSL format
 */
 
 @layer base {
   :root {
-    /* Core palette - Deep Navy & Warm Neutrals */
-    --background: 210 20% 98%;
-    --foreground: 220 30% 15%;
+    /* Core palette - Premium Dark & Refined Neutrals */
+    --background: 220 15% 97%;
+    --foreground: 225 25% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 30% 15%;
+    --card-foreground: 225 25% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 15%;
+    --popover-foreground: 225 25% 12%;
 
-    /* Primary - Deep Navy Blue */
-    --primary: 220 45% 20%;
+    /* Primary - Premium Charcoal Blue */
+    --primary: 222 47% 11%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Slate Gray */
-    --secondary: 215 15% 92%;
-    --secondary-foreground: 220 30% 25%;
+    /* Secondary - Elegant Slate */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 225 20% 25%;
 
-    /* Muted - Light Slate */
-    --muted: 215 20% 94%;
-    --muted-foreground: 215 15% 45%;
+    /* Muted - Refined Gray */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    /* Accent - Warm Gold */
-    --accent: 38 75% 50%;
-    --accent-foreground: 220 30% 15%;
+    /* Accent - Sophisticated Gold */
+    --accent: 45 93% 47%;
+    --accent-foreground: 225 25% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 20% 88%;
-    --input: 215 20% 88%;
-    --ring: 220 45% 20%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 222 47% 11%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    /* Hero Section Specific */
-    --hero-bg: 220 45% 15%;
-    --hero-overlay: 220 50% 10%;
+    /* Hero Section Specific - Deep Premium */
+    --hero-bg: 222 47% 8%;
+    --hero-overlay: 222 50% 5%;
     
     /* Section backgrounds */
-    --section-light: 210 20% 98%;
-    --section-alt: 215 20% 95%;
+    --section-light: 220 15% 97%;
+    --section-alt: 220 14% 96%;
+    
+    /* Premium gradient colors */
+    --gradient-start: 222 47% 11%;
+    --gradient-end: 222 47% 20%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -121,19 +126,31 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
 @layer utilities {
   .heading-display {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     @apply font-semibold tracking-tight;
   }
 
   .body-text {
     font-family: 'Inter', sans-serif;
     @apply font-normal leading-relaxed;
+  }
+
+  .premium-gradient {
+    background: linear-gradient(135deg, hsl(var(--gradient-start)) 0%, hsl(var(--gradient-end)) 100%);
+  }
+
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-amber-400;
   }
 
   .text-balance {
@@ -146,6 +163,14 @@
 
   .animate-fade-in {
     animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.5s ease-out forwards;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
   }
 
   @keyframes fadeUp {
@@ -165,6 +190,17 @@
     }
     to {
       opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
     }
   }
 }

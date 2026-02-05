@@ -1,66 +1,93 @@
-import { Users, Calendar, ThumbsUp } from "lucide-react";
-
-const stats = [
-  { icon: Calendar, value: "20+", label: "Years Experience" },
-  { icon: Users, value: "5,000+", label: "Happy Customers" },
-  { icon: ThumbsUp, value: "99%", label: "Satisfaction Rate" },
-];
+import { Users, Calendar, ThumbsUp, Award, CheckCircle } from "lucide-react";
+import teamImage from "@/assets/team.jpg";
 
 const AboutSection = () => {
+  const values = [
+    "Certified & Licensed Professionals",
+    "Transparent Pricing, No Hidden Fees",
+    "100% Satisfaction Guarantee",
+    "Rapid Response Times",
+  ];
+
   return (
-    <section id="about" className="py-20 md:py-28 bg-section-alt">
+    <section id="about" className="py-24 md:py-32 bg-gradient-to-b from-section-alt to-section-light relative overflow-hidden">
+      {/* Background decorations */}
+      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl" />
+      
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div>
-            <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full font-body text-sm font-semibold mb-4">
+            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary/5 text-primary rounded-full font-body text-sm font-semibold mb-6 border border-primary/10">
+              <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
               About Us
             </span>
-            <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-6">
-              A Legacy of Trust & Excellence
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-8 leading-tight">
+              Building Trust Through{" "}
+              <span className="text-primary">Excellence</span>
             </h2>
-            <p className="font-body text-muted-foreground text-lg leading-relaxed mb-6">
-              For over two decades, we've been the trusted choice for homeowners
-              and businesses in our community. Our commitment to quality
-              workmanship and customer satisfaction has earned us a reputation we're
-              proud of.
-            </p>
             <p className="font-body text-muted-foreground text-lg leading-relaxed mb-8">
-              Every member of our team is fully licensed, insured, and dedicated to
-              delivering exceptional results. We treat your property as if it were
-              our own, ensuring every job is completed to the highest standards.
+              For over two decades, SHS Services LLC has been the premier choice for 
+              businesses and homeowners throughout Virginia. Our unwavering commitment 
+              to quality workmanship and exceptional customer service has established 
+              us as industry leaders.
             </p>
-
-            <div className="grid grid-cols-3 gap-6">
-              {stats.map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
-                    <stat.icon className="w-6 h-6 text-primary" />
+            
+            {/* Values list */}
+            <div className="grid sm:grid-cols-2 gap-4 mb-10">
+              {values.map((value, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-4 h-4 text-accent" />
                   </div>
-                  <div className="font-display text-2xl md:text-3xl font-bold text-primary">
-                    {stat.value}
-                  </div>
-                  <div className="font-body text-sm text-muted-foreground">
-                    {stat.label}
-                  </div>
+                  <span className="font-body text-foreground font-medium">{value}</span>
                 </div>
               ))}
             </div>
+
+            {/* CTA */}
+            <a 
+              href="#contact" 
+              className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-all hover:shadow-xl hover:shadow-primary/20"
+            >
+              <span>Get Started Today</span>
+              <Award className="w-5 h-5" />
+            </a>
           </div>
 
-          <div className="relative">
-            <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-12 h-12 text-primary" />
-                  </div>
-                  <p className="font-display text-xl text-foreground">Our Expert Team</p>
-                  <p className="font-body text-muted-foreground mt-2">Ready to serve you</p>
+          <div className="relative lg:pl-8">
+            {/* Main image */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src={teamImage} 
+                alt="SHS Services professional team"
+                className="w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+            </div>
+            
+            {/* Floating stats card */}
+            <div className="absolute -bottom-8 -left-8 bg-white rounded-2xl shadow-2xl p-6 border border-border/50">
+              <div className="flex items-center gap-6">
+                <div className="text-center">
+                  <div className="font-display text-3xl font-bold text-primary">20+</div>
+                  <div className="font-body text-xs text-muted-foreground uppercase tracking-wide">Years</div>
+                </div>
+                <div className="h-12 w-px bg-border"></div>
+                <div className="text-center">
+                  <div className="font-display text-3xl font-bold text-primary">5K+</div>
+                  <div className="font-body text-xs text-muted-foreground uppercase tracking-wide">Clients</div>
+                </div>
+                <div className="h-12 w-px bg-border"></div>
+                <div className="text-center">
+                  <div className="font-display text-3xl font-bold text-accent">A+</div>
+                  <div className="font-body text-xs text-muted-foreground uppercase tracking-wide">Rated</div>
                 </div>
               </div>
             </div>
-            {/* Decorative accent */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/20 rounded-xl -z-10" />
+            
+            {/* Decorative elements */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-2xl -z-10" />
+            <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/10 rounded-xl -z-10" />
           </div>
         </div>
       </div>
