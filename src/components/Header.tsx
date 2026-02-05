@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, ArrowRight } from "lucide-react";
+ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Header = () => {
@@ -31,12 +32,12 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+         <Link to="/" className="flex items-center gap-2">
           <Logo 
             size="sm" 
             variant={isScrolled ? "dark" : "light"}
           />
-        </a>
+         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
