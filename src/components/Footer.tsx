@@ -1,4 +1,5 @@
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+ import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+ import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 const Footer = () => {
@@ -16,6 +17,12 @@ const Footer = () => {
       { label: "Testimonials", href: "#testimonials" },
       { label: "Contact", href: "#contact" },
     ],
+     legal: [
+       { label: "Privacy Policy", href: "/privacy-policy" },
+       { label: "Terms & Conditions", href: "/terms-conditions" },
+       { label: "Refund Policy", href: "/refund-policy" },
+       { label: "Cookie Policy", href: "/cookie-policy" },
+     ],
   };
 
   return (
@@ -42,7 +49,7 @@ const Footer = () => {
       </div>
 
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Logo size="lg" variant="light" className="mb-6" />
@@ -100,6 +107,26 @@ const Footer = () => {
             </ul>
           </div>
 
+           {/* Legal */}
+           <div>
+             <h4 className="font-display font-bold text-primary-foreground mb-6">
+               Legal
+             </h4>
+             <ul className="space-y-3">
+               {links.legal.map((link, index) => (
+                 <li key={index}>
+                   <Link
+                     to={link.href}
+                     className="font-body text-primary-foreground/60 hover:text-accent transition-colors inline-flex items-center gap-2 group"
+                   >
+                     <span className="w-1.5 h-1.5 rounded-full bg-accent/50 group-hover:bg-accent transition-colors"></span>
+                     {link.label}
+                   </Link>
+                 </li>
+               ))}
+             </ul>
+           </div>
+ 
           {/* Contact Info */}
           <div>
             <h4 className="font-display font-bold text-primary-foreground mb-6">
@@ -133,8 +160,8 @@ const Footer = () => {
             © {currentYear} SHS Services LLC. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="font-body text-primary-foreground/50 hover:text-accent text-sm transition-colors">Privacy Policy</a>
-            <a href="#" className="font-body text-primary-foreground/50 hover:text-accent text-sm transition-colors">Terms of Service</a>
+             <Link to="/privacy-policy" className="font-body text-primary-foreground/50 hover:text-accent text-sm transition-colors">Privacy Policy</Link>
+             <Link to="/terms-conditions" className="font-body text-primary-foreground/50 hover:text-accent text-sm transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
