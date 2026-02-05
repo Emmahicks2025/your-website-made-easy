@@ -8,9 +8,9 @@ interface LogoProps {
 
 const Logo = ({ className = "", size = "md", variant = "dark" }: LogoProps) => {
   const sizes = {
-    sm: { container: "h-12", icon: 20, text: "text-xl" },
-    md: { container: "h-16", icon: 26, text: "text-2xl" },
-    lg: { container: "h-24", icon: 36, text: "text-3xl" },
+    sm: { container: "h-14", icon: 24, text: "text-2xl" },
+    md: { container: "h-20", icon: 32, text: "text-3xl" },
+    lg: { container: "h-28", icon: 44, text: "text-4xl" },
   };
 
   const colors = {
