@@ -33,7 +33,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <Logo 
-            size={isScrolled ? "sm" : "md"} 
+            size="sm" 
             variant={isScrolled ? "dark" : "light"}
           />
         </a>
