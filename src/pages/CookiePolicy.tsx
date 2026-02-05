@@ -29,7 +29,7 @@
                  Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently, provide a better user experience, and give website owners useful information about how their site is being used.
                </p>
                <p className="text-foreground/80 leading-relaxed mt-4">
-                 This Cookie Policy explains how SHS Services LLC ("we," "us," or "our") uses cookies and similar technologies on our website. By continuing to use our website, you consent to our use of cookies as described in this policy.
+                   This Cookie Policy explains how SHS Services Inc. ("we," "us," or "our") uses cookies and similar technologies on our website. By continuing to use our website, you consent to our use of cookies as described in this policy.
                </p>
              </section>
  
@@ -290,7 +290,7 @@
                  If you have questions about our use of cookies or this policy, please contact us:
                </p>
                <div className="mt-4 p-4 bg-muted rounded-xl">
-                 <p className="text-foreground font-semibold">SHS Services LLC</p>
+                   <p className="text-foreground font-semibold">SHS Services Inc.</p>
                  <p className="text-foreground/80">14970 Potomac Heights Pl, Unit 113</p>
                  <p className="text-foreground/80">Woodbridge, VA 22191</p>
                  <p className="text-foreground/80 mt-2">Email: info@shsofficial.com</p>

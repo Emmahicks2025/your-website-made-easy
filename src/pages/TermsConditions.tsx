@@ -27,7 +27,7 @@
                  Agreement to Terms
                </h2>
                <p className="text-foreground/80 leading-relaxed">
-                 These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("Customer," "you," or "your") and SHS Services LLC ("Company," "we," "our," or "us") governing your use of our website and HVAC services.
+                 These Terms and Conditions ("Terms") constitute a legally binding agreement between you ("Customer," "you," or "your") and SHS Services Inc. ("Company," "we," "our," or "us") governing your use of our website and HVAC services.
                </p>
                <p className="text-foreground/80 leading-relaxed mt-4">
                  By accessing our website, scheduling a service, or engaging our services in any way, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, you must not use our website or services.
@@ -42,7 +42,7 @@
                  Services Description
                </h2>
                <p className="text-foreground/80 leading-relaxed">
-                 SHS Services LLC provides heating, ventilation, and air conditioning (HVAC) services including but not limited to:
+                 SHS Services Inc. provides heating, ventilation, and air conditioning (HVAC) services including but not limited to:
                </p>
                <ul className="list-disc list-inside text-foreground/80 space-y-2 mt-3">
                  <li>Installation of new HVAC systems and equipment</li>
@@ -139,7 +139,7 @@
                  Limitation of Liability
                </h2>
                <p className="text-foreground/80 leading-relaxed">
-                 TO THE MAXIMUM EXTENT PERMITTED BY LAW, SHS SERVICES LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
+                 TO THE MAXIMUM EXTENT PERMITTED BY LAW, SHS SERVICES INC. SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO:
                </p>
                <ul className="list-disc list-inside text-foreground/80 space-y-2 mt-3">
                  <li>Loss of profits, revenue, or business opportunities</li>
@@ -193,7 +193,7 @@
                  Intellectual Property
                </h2>
                <p className="text-foreground/80 leading-relaxed">
-                 All content on our website, including text, graphics, logos, images, and software, is the property of SHS Services LLC or its content suppliers and is protected by intellectual property laws. You may not reproduce, distribute, modify, or create derivative works without our express written permission.
+                   All content on our website, including text, graphics, logos, images, and software, is the property of SHS Services Inc. or its content suppliers and is protected by intellectual property laws. You may not reproduce, distribute, modify, or create derivative works without our express written permission.
                </p>
              </section>
  
@@ -229,7 +229,7 @@
                  For questions about these Terms and Conditions, please contact us:
                </p>
                <div className="mt-4 p-4 bg-muted rounded-xl">
-                 <p className="text-foreground font-semibold">SHS Services LLC</p>
+                 <p className="text-foreground font-semibold">SHS Services Inc.</p>
                  <p className="text-foreground/80">14970 Potomac Heights Pl, Unit 113</p>
                  <p className="text-foreground/80">Woodbridge, VA 22191</p>
                  <p className="text-foreground/80 mt-2">Email: info@shsofficial.com</p>

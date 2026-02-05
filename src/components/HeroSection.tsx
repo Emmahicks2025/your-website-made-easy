@@ -45,7 +45,7 @@ const HeroSection = () => {
             className="font-body text-lg md:text-xl text-primary-foreground/70 mb-10 leading-relaxed max-w-2xl animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
-            SHS Services LLC delivers expert HVAC installation, repair, and maintenance 
+             SHS Services Inc. delivers expert HVAC installation, repair, and maintenance 
             throughout Virginia. Keep your home comfortable year-round with our certified technicians.
           </p>
 

@@ -157,7 +157,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-body text-primary-foreground/50 text-sm">
-            © {currentYear} SHS Services LLC. All rights reserved.
+             © {currentYear} SHS Services Inc. All rights reserved.
           </p>
           <div className="flex gap-6">
              <Link to="/privacy-policy" className="font-body text-primary-foreground/50 hover:text-accent text-sm transition-colors">Privacy Policy</Link>
