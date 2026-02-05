@@ -49,7 +49,7 @@ const Footer = () => {
               <img 
                 src={logo} 
                 alt="SHS Services Logo" 
-                className="h-14 w-auto"
+                className="h-20 w-auto"
               />
             </div>
             <p className="font-body text-primary-foreground/60 leading-relaxed mb-6 max-w-xs">

@@ -36,7 +36,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="SHS Services Logo" 
-              className="h-12 w-auto transition-all"
+              className="h-14 md:h-16 w-auto transition-all"
             />
           </div>
         </a>
