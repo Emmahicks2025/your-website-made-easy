@@ -52,7 +52,9 @@ const Footer = () => {
          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Logo size="lg" variant="light" className="mb-6" />
+             <Link to="/">
+               <Logo size="lg" variant="light" className="mb-6" />
+             </Link>
             <p className="font-body text-primary-foreground/60 leading-relaxed mb-6 max-w-xs">
               Your trusted HVAC experts. Keeping Virginia comfortable 
               with premium heating, cooling & ventilation solutions for over 20 years.
